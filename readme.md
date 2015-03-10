@@ -26,7 +26,7 @@ Turns out the correct number is `5669` and the password for the next level is `u
 #Level 26
 http://overthewire.org/wargames/bandit/bandit26.html
 
-Thanks to [https://github.com/captn3m0/]captn3m0 who gave me the initial hint to solve this problem which was to run
+Thanks to [captn3m0](https://github.com/captn3m0/) who gave me the initial hint to solve this problem which was to run
 ```
 cat /usr/bin/showtext
 ```

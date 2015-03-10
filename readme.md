@@ -24,4 +24,22 @@ Remember, you have to execute this script after SSHing into bandit24. The script
 Turns out the correct number is `5669` and the password for the next level is `uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG`.
 
 #Level 26
-To be added soon    
+http://overthewire.org/wargames/bandit/bandit26.html
+
+Thanks to captn3m0 (https://github.com/captn3m0/) who gave me the initial hint to solve this problem which was to run
+```
+cat /usr/bin/showtext
+```
+
+Further hints are given below
+1. Focus on the `more` being executed
+2. There is a reason why 'bandit26' written in that particular fashion spans more than 1 line
+3. Did you know that `more` command had an interactive shell too?
+4. Did you know you could open vi from the interactive shell?
+5. Research what `:r *file_name*` in vi does
+
+If the answer is not obvious enough from the above hints, here goes. 
+1. To get in to the interactive shell of more command, the output needs to exceed the height of the terminal i.e. you need a page break. So, decrease the height of the terminal to about 3-4 lines.
+2. SSH into *bandit26*. We are now able to access the interactive shell. Enter `vi` to open up an editor.
+3. Type `:r /etc/bandit_pass/bandit26` and you get the password for level 26.    
+   
